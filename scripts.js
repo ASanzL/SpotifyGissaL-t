@@ -1,5 +1,5 @@
 
-import { domainUri } from "./domain-uri.js";
+import { domainUri } from "./domainUri.js";
 
 let domainUriString = domainUri ? domainUri : "https://github.com/ASanzL/SpotifyGissaL-t";
 console.log(domainUriString);
