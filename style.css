@@ -1,0 +1,73 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: "Helvetica";
+    margin:0;
+    padding:0;
+}
+
+#pre-start-game-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+#during-game-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+#song-name {
+    font-size: 120px;
+    margin-top: 70px;
+}
+
+table {
+    font-size: 40px;
+}
+
+td {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.playlist-button {
+    background-color: #1ed760;
+    border: none;
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    margin: 5px;
+    border-radius: 15px;
+    width: 400px;
+}
+.playlist-button-skip {
+    background-color: #1a8b42 !important;
+}
+
+.playlist-button:hover {
+    cursor: pointer;
+    background-color: #1fa84f;
+}
+
+#progress-border {
+    margin: 0;
+    padding: 0;
+}
+#progress-bar {
+    margin: 0;
+    padding: 0;
+    background-color: #1ed760;
+    height:12px;
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+#song-pic {
+    margin-top: 70px;
+    border-radius: 8px;
+}
