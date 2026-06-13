@@ -1,7 +1,12 @@
 
-import { domainUri } from "./domainUri.js";
+let domainUriString = "";
+try {
+    import { domainUri } from "./domainUri.js";
+    domainUriString = domainUri;
+} catch {
+ domainUriString = "https://github.com/ASanzL/SpotifyGissaL-t";
+}
 
-let domainUriString = domainUri ? domainUri : "https://github.com/ASanzL/SpotifyGissaL-t";
 console.log(domainUriString);
 
 const clientId = "cb7496732c1a43189d1603de8f7c122a";
