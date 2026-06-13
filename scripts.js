@@ -1,9 +1,9 @@
 
 let domainUriString = "";
 try {
-    import { domainUri } from "./domainUri.js";
-    domainUriString = domainUri;
-} catch {
+    const domainUriModule = await import("./domainUri.js");
+    domainUriString = domainUriModule.domainUri;
+} catch (e) {
  domainUriString = "https://github.com/ASanzL/SpotifyGissaL-t";
 }
 
