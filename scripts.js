@@ -1,4 +1,7 @@
 
+import { domainUri } from "./domain-uri";
+let domainUri = this.domainUri ? this.domainUri : "https://github.com/ASanzL/SpotifyGissaL-t";
+
 const clientId = "cb7496732c1a43189d1603de8f7c122a";
 const params = new URLSearchParams(window.location.search);
 const code = params.get("code");
@@ -85,7 +88,7 @@ export async function redirectToAuthCodeFlow(clientId) {
     const params = new URLSearchParams();
     params.append("client_id", clientId);
     params.append("response_type", "code");
-    params.append("redirect_uri", "https://asanzl.github.io/SpotifyGissaL-t/index.html");
+    params.append("redirect_uri", `${domainUri}index.html`);
     params.append("scope", "user-read-currently-playing user-modify-playback-state user-read-playback-state playlist-read-private");
     params.append("code_challenge_method", "S256");
     params.append("code_challenge", challenge);
@@ -119,7 +122,7 @@ export async function getAccessToken(clientId, code) {
     params.append("client_id", clientId);
     params.append("grant_type", "authorization_code");
     params.append("code", code);
-    params.append("redirect_uri", "https://asanzl.github.io/SpotifyGissaL-t/index.html");
+    params.append("redirect_uri", `${domainUri}index.html`);
     params.append("code_verifier", verifier);
 
     const result = await fetch("https://accounts.spotify.com/api/token", {
