@@ -4,7 +4,7 @@ try {
     const domainUriModule = await import("./domainUri.js");
     domainUriString = domainUriModule.domainUri;
 } catch (e) {
- domainUriString = "https://github.com/ASanzL/SpotifyGissaL-t";
+ domainUriString = "https://asanzl.github.io/SpotifyGissaL-t";
 }
 
 console.log(domainUriString);
